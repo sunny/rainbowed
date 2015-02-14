@@ -1,4 +1,2 @@
-require "rubygems"
-require "google_custom_search_api"
-require "digest/md5"
+require "bundler"
 require "rainbowed/password"

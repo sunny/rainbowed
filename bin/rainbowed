@@ -1,17 +1,8 @@
 #!/usr/bin/env ruby
 require "rainbowed"
+require "rainbowed/command_line"
 
-GOOGLE_API_KEY = ENV['GOOGLE_API_KEY']
-GOOGLE_SEARCH_CX = ENV['GOOGLE_SEARCH_CX']
+require "dotenv"
+Dotenv.load
 
-password = ARGV.first
-if password.nil?
-  abort "Usage: #{$0} <password>"
-end
-
-rainbowed = Rainbowed::Password.new(password)
-if rainbowed.found?
-  puts "Found! Don't use this as a password."
-else
-  puts "Not found! Sounds like a good password."
-end
+Rainbowed::CommandLine.new(ARGV).call
