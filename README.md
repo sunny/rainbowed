@@ -15,7 +15,7 @@ Install
 
 You need to pick between using Bing or Google to search the Web.
 
-## Bing
+### Bing
 
 Create an account with the [Bing Search API](https://datamarket.azure.com/dataset/bing/search).
 
@@ -24,7 +24,7 @@ a `.env` file:
 
     BING_API_KEY=EihJlbarSpam9/fooQipB…60UfD5h8GQaAsVGorwmS/Q32
 
-## Google
+### Google
 
 You will need a Google API Key and you will also need to create a
 Google Custom Search Engine configured to searches on the whole internet.
