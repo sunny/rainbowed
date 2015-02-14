@@ -1,0 +1,22 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.3.7)
+    dotenv (0.10.0)
+    google_custom_search_api (1.0.0)
+      addressable
+      httparty
+    httparty (0.13.3)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
+    json (1.8.2)
+    multi_xml (0.5.5)
+    searchbing (0.2.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  dotenv
+  google_custom_search_api
+  searchbing

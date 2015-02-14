@@ -1,5 +1,7 @@
 require "searchbing"
 
+ENV["BING_API_KEY"] or fail "No BING_API_KEY env found"
+
 module Rainbowed
   class BingSearch
     def initialize(search)
@@ -7,8 +9,6 @@ module Rainbowed
     end
 
     def results
-      fail "No BING_API_KEY env found" unless ENV["BING_API_KEY"]
-
       @results ||= begin
         web = Bing.new(ENV["BING_API_KEY"], 1, "Web")
         results = web.search(@search)
