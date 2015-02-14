@@ -1,4 +1,10 @@
 #!/usr/bin/env ruby
+
+# To prevent needing to prepend `bin/rainbowed` with `ruby -Ilib`
+# This will not be necessary if this project is turned into a gem.
+lib_path = File.expand_path(File.dirname(__FILE__) + "/../lib")
+$LOAD_PATH.unshift(lib_path) unless $LOAD_PATH.include?(lib_path)
+
 require "rainbowed"
 require "rainbowed/command_line"
 

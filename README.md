@@ -1,7 +1,7 @@
 rainbowed
 =========
 
-Password-strength detector by searching the Web for a password's md5 hash.
+Password-strength detector by searching the Web for the password's md5 hash.
 
 Why?
 ----
@@ -16,31 +16,31 @@ Command line usage
 ------------------
 
 ```sh
-$ ruby -Ilib bin/rainbowed your_password
+$ bin/rainbowed your_password
 ```
 
 Example
 -------
 
 ```sh
-$ ruby -Ilib bin/rainbowed mypassword1
+$ bin/rainbowed mypassword1
 Searching for 0d28e4080dc8f64fc9603639bb7aa1b9…
 Found! Do not use this as a password. Ever.
 
-$ ruby -Ilib bin/rainbowed p4ssw0rd
+$ bin/rainbowed p4ssw0rd
 Searching for 2a9d119df47ff993b662a8ef36f9ea20…
 Found! Do not use this as a password. Ever.
 
-$ ruby -Ilib bin/rainbowed mustang99
+$ bin/rainbowed mustang99
 Searching for f0244ee97c7e4cfeae67c04e0b09fa26…
 Found! Do not use this as a password. Ever.
 
-$ ruby -Ilib bin/rainbowed 'asdfasdf123!'
+$ bin/rainbowed 'asdfasdf123!'
 Searching for 36b19d757e52917f32bc39afd5d1dcad…
 Found! Do not use this as a password. Ever.
 
-$ ruby -Ilib bin/rainbowed JumpToTheSkyAndStartToFly
-Searching for 6f82cade2402165ffb1634714743cfe5…
+$ bin/rainbowed JumpToTheSky
+Searching for 4f5c662f150824e0e3891646bf4b3535…
 Not found. This password looks ok.
 ```
 
