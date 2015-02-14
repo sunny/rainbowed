@@ -26,15 +26,19 @@ Example
 $ ruby -Ilib bin/rainbowed mypassword1
 Searching for 0d28e4080dc8f64fc9603639bb7aa1b9…
 Found! Do not use this as a password. Ever.
+
 $ ruby -Ilib bin/rainbowed p4ssw0rd
 Searching for 2a9d119df47ff993b662a8ef36f9ea20…
 Found! Do not use this as a password. Ever.
+
 $ ruby -Ilib bin/rainbowed mustang99
 Searching for f0244ee97c7e4cfeae67c04e0b09fa26…
 Found! Do not use this as a password. Ever.
+
 $ ruby -Ilib bin/rainbowed 'asdfasdf123!'
 Searching for 36b19d757e52917f32bc39afd5d1dcad…
 Found! Do not use this as a password. Ever.
+
 $ ruby -Ilib bin/rainbowed JumpToTheSkyAndStartToFly
 Searching for 6f82cade2402165ffb1634714743cfe5…
 Not found. This password looks ok.
