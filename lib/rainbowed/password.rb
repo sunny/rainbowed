@@ -1,17 +1,18 @@
+require "digest/md5"
+
 module Rainbowed
   class Password
-    def initialize(password)
+    def initialize(password, provider: GoogleSearch)
       @password = password
+      @provider = provider
     end
 
-    def hash
+    def hashed
       Digest::MD5.hexdigest(@password)
     end
 
     def found?
-      results = GoogleCustomSearchApi.search(hash, num: 1)
-      fail "Error #{results["error"]["code"]} #{results["error"]["message"]}" if results["error"]
-      results["items"].size != 0
+      @provider.new(hashed).any_result?
     end
   end
 end
