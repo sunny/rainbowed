@@ -11,10 +11,10 @@ module Rainbowed
 
       puts "Searching for #{rainbowed.hashed}…"
       if rainbowed.found?
-        puts "Found! Don't use this as a password."
+        puts "Found! Do not use this as a password. Ever."
         exit 1
       else
-        puts "Not found! Sounds like a good password."
+        puts "Not found. This password looks ok."
         exit 0
       end
     end

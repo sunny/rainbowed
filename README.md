@@ -42,5 +42,8 @@ Command line usage
 ------------------
 
 ```sh
-$ ruby -Ilib bin/rainbowed YOUR_PASSWORD
+$ ruby -Ilib bin/rainbowed mypassword1
+$ ruby -Ilib bin/rainbowed p4ssw0rd
+$ ruby -Ilib bin/rainbowed mustang99
+$ ruby -Ilib bin/rainbowed 'asdfasdf123!'
 ```
