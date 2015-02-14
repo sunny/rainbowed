@@ -1,7 +1,7 @@
 rainbowed
 =========
 
-Password-strength detector by Google searching a password's md5 hash.
+Password-strength detector by searching the Web for a password's md5 hash.
 
 Why?
 ----

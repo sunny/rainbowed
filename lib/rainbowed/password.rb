@@ -2,7 +2,7 @@ require "digest/md5"
 
 module Rainbowed
   class Password
-    def initialize(password, provider: GoogleSearch)
+    def initialize(password, provider: BingSearch)
       @password = password
       @provider = provider
     end
