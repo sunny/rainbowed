@@ -8,15 +8,17 @@ module Rainbowed
       @search = search
     end
 
+    def any_result?
+      results[0][:WebTotal] != "0"
+    end
+
+    private
+
     def results
       @results ||= begin
         web = Bing.new(ENV["BING_API_KEY"], 1, "Web")
         results = web.search(@search)
       end
-    end
-
-    def any_result?
-      results[0][:WebTotal] != "0"
     end
   end
 end
