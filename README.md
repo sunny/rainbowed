@@ -48,11 +48,26 @@ Not found. This password looks ok.
 Install
 -------
 
-You need to pick between using Bing or Google to search the Web.
+This program requires Ruby > 2. With Git and bundler (`gem install bundler`)
+you can install it like so:
+
+```sh
+$ git clone https://github.com/sunny/rainbowed.git
+$ cd rainbowed
+$ bundle
+```
+
+You then need to add an API key in a `.env` file.
+
+
+API Keys
+--------
+
+You then need to choose between using Bing or Google to search the Web.
 
 ### Bing
 
-Create an account with the
+Create a free account with the
 [Bing Search API](https://datamarket.azure.com/dataset/bing/search).
 
 Then copy your [account key](https://datamarket.azure.com/account/keys) into
@@ -62,7 +77,7 @@ a `.env` file:
 
 ### Google
 
-You will need a Google API Key and you will also need to create a
+You will need a Google API Key and you will also need to create a free
 Google Custom Search Engine configured to searches on the whole internet.
 Check out [google_custom_search_api](https://github.com/wiseleyb/google_custom_search_api#configure)'s
 documentation on how to do that.
