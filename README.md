@@ -44,6 +44,8 @@ Searching for 4f5c662f150824e0e3891646bf4b3535…
 Not found. This password looks ok.
 ```
 
+Note that should you try the last command now, it will come up as found, because this README is on the internet.
+
 
 Install
 -------
