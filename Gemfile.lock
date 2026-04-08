@@ -3,16 +3,20 @@ GEM
   specs:
     addressable (2.9.0)
       public_suffix (>= 2.0.2, < 8.0)
+    bigdecimal (4.1.1)
+    csv (3.3.5)
     diff-lcs (1.4.4)
     dotenv (2.7.6)
     google_custom_search_api (2.0.0)
       addressable
       httparty
-    httparty (0.21.0)
+    httparty (0.24.0)
+      csv
       mini_mime (>= 1.0.0)
       multi_xml (>= 0.5.2)
-    mini_mime (1.1.2)
-    multi_xml (0.6.0)
+    mini_mime (1.1.5)
+    multi_xml (0.8.1)
+      bigdecimal (>= 3.1, < 5)
     public_suffix (7.0.5)
     rspec (3.10.0)
       rspec-core (~> 3.10.0)
